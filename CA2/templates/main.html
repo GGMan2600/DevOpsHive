@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Homepage on DevOps">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gian Gallego">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" href="static/image/favicon.ico" type="x-icon"/>
+    <title>Main Page</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <header id="main-header">
+            <img src="static/image/cooltext496253363751185.png" id="DevOpsHive"width="250px"/>
+         </header>
+        <div id="nav-buttons">
+            <a href="{{url_for ('main') }}" class="active">Home</a>
+            <a href="{{url_for ('DevOps')}}">DevOps Engineer</a>
+            <a href="{{url_for ('Cloud')}}">Cloud Engineer</a>
+            <a href="{{url_for ('Site')}}">Site Reliability Engineer</a>
+            <a href="{{url_for ('account')}}">My Account</a>
+        </div>
+    </div>
+    <div class="headimg">
+        <img src="static/image/NewDevImg.jpg" id="head-img"width="100%"
+         height="400px"/>
+    </div>
+<main>
+    <h1 id="demo"></h1>
+    <div id="main-header">
+    <h1 >
+    What is DevOps?
+    </h1>
+    <p>DevOps is a <em>set of practices, tools, 
+    and a cultural philosophy that automate 
+    and integrate the processes between software development and IT teams.</em><br>
+     It emphasizes team empowerment, 
+    cross-team communication and collaboration, and technology automation.</p>
+    </div>
+</main>
+
+    <section id="middlesection">
+
+        <div id="middle-text">
+        <h1>DevOps Lifecycle</h1>
+        <p>The DevOps lifecycle is a continuous, iterative process that streamlines software<br>
+            development and delivery by combining development and operations through automation<br> and collaboration. 
+            It typically includes phases like planning, coding,building, testing, deploying,<br>operating, and monitoring,
+            all of which are supported by continuous feedback<br>loops to improve the software over time. </p>
+            </div>
+        <img src="static/image/DevOps Life Cycle Image.jpeg" id="lifecycle"width="700px" height="400px"/>
+    </section>
+    <div id="lifecycle-steps">
+        <h1 id="Steps">Stages in The DevOps Lifecycle</h1>  
+
+        <div id="section1">
+            <div id="Planning">
+       <h2>Plan(Stage 1)</h2>
+    <p>The planning phase sets the stage for the entire DevOps Lifecycle.
+        This phase focuses on creating a plan that aligns the projects business goals or needs. Popular Planning software 
+   toolsinclude JIRA, Github Projects, and Azure DevOps Boards. </p>
+   </div>
+        <div id="Code">
+          <h2>Code(Stage 2)</h2>
+    <p>This stage is where developers write the code to implement
+        planned changes in your project.
+        It involves IDE tools and VCS platforms such as GitHub, GitLab, and Bitbucket.
+    This helps ensure software development stays on schedule and produces the expected result.</p>
+    </div>
+
+        <div id="Build">
+        <h2>Build(Stage 3)</h2>
+          <p>Code is compiled into an executable format, and code from multiple contributors is 
+            integrated to ensure it works together seamlessly. Tools like Jenkins and GitLab CI/CD automate this process. </p>
+        </div>
+        <div id="Test">
+                <h2>Test(Stage 4)</h2>
+    <p>The software is then tested to ensure it works properly.
+         This includes different types of tests like security, performance,
+  and user acceptance.tools like JUnit and Selenium are used to
+   automate these tests and verify the software's integrity</p>
+        </div>
+    </div>
+
+        <div id="section2">
+            <div id="Release">
+             <h2>Release(Stage 5)</h2>
+                <p>After testing, the software is ready to be released to production.This approach allows teams to detect and
+         resolve issues early in the lifecycle,significantly reducing the cost
+   complexity of fixes down the line. DevOps team ensures that
+    checks are passed and then sends the latest version to the production environment.</p>
+</div>
+           <div id="Deploy">
+             <h2>Deploy(Stage 6)</h2>
+    <p>Deployment is where the application goes live for end-users.
+        This phase requires precision and stability,
+         as deployment errors can impact user experience directly.Automated deployment tools like 
+         Docker and Kubernetes
+     enable teams to launch applications quickly and consistently.</p>
+              </div>
+
+            <div id="Operate">
+        <h2>Operate(Stage 7)</h2>
+    <p>The operations team manages and maintains 
+        the live application, ensuring<br> it runs smoothly. 
+        Tools like Ansible and Kubernetes are used to manage infrastructure. </p>
+</div>
+        <div id="Monitor">
+    <h2>Monitor(Stage 8)</h2> 
+    <p>The application's performance and user experience are continuously monitored using tools like Prometheus, Grafana,
+         and Splunk. This data provides feedback for the next planning cycle, creating a loop of continuous improvement. </p>
+        </div>
+    </div>
+
+    <section id="careers">
+        <h1>Explore Careers in DevOps</h1>
+        <div id="career-card1">
+            <img src="static/image/DevOps Engineer at Work.png" id="img1" alt="DevOps Engineer"width="300px" height="200px"/>
+            <h2>DevOps Engineer</h2>
+            <p>DevOps Engineers are responsible for bridging the gap between development and operations teams.<br>
+                 They automate processes, manage infrastructure, and ensure continuous integration and delivery.</p>
+            <a href="{{url_for('DevOps')}}" id="button1" class="learn-more">Click Me!</a>
+        </div>
+        <div id="career-card2">
+            <img src="static/image/cloud-engineer.jpg" id="img2"alt="Cloud Engineer"width="300px" height="200px"/>
+            <h2>Cloud Engineer</h2>
+            <p>Cloud Engineers design, implement, and manage cloud-based solutions.<br>
+                 They work with cloud service providers to ensure scalable and reliable infrastructure.</p>
+            <a href="{{url_for('Cloud')}}" id="button2" class="learn-more">Click Me!</a>
+        </div>
+        <div id="career-card3">
+            <img src="static/image/sre-engineer.jpg" id="img3"alt="Site Reliability Engineer"width="300px" height="200px"/>
+            <h2>Site Reliability Engineer</h2>
+            <p>Site Reliability Engineers (SREs) focus on maintaining the reliability and performance of applications.<br>
+                 They apply software engineering principles to operations tasks.</p>
+            <a href="{{url_for('Site')}}" id="button3" class="learn-more">Click Me!</a>
+        </div>
+    </section>
+    <footer id="footer">
+    <div id="bottom-footer">
+        <h1 id="bottom-header">DevOpsHive</h1>
+        <p id="bottom-line">This is a website that provides the users information on
+        DevOps<br>and examples of the various career opportunites in the field.</p>
+        <hr id="line">
+    <div id="bottom-step">
+        <p id="bottom-text">&copy; Gian Gallego</p>
+        <div id="links">
+        <a href="{{url_for('main')}}">Home</a>
+        <a href="{{url_for('account')}}">My Account</a>
+        </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="static/java/java.js"></script>
+</body>
+</html>

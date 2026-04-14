@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gian Gallego">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/image/favicon.ico" type="x-icon"/>
+    <link rel="stylesheet" href="static/css/Cloud.css">
+    <title>Cloud Engineer Page</title>
+</head>
+<body>
+      <div id="nav-bar">
+        <header id="main-header">
+            <img src="static/image/cooltext496253363751185.png" id="DevOpsHive"width="250px"/>
+         </header>
+        <div id="nav-buttons">
+            <a href="{{url_for('main')}}">Home</a>
+            <a href="{{url_for('DevOps')}}">DevOps Engineer</a>
+            <a href="{{url_for('Cloud')}}" class="active">Cloud Engineer</a>
+            <a href="{{url_for('Site')}}">Site Reliability Engineer</a>
+            <a href="{{url_for('account')}}">My Account</a>
+        </div>
+    </div>
+    <h1 id="top-header">Cloud Engineer</h1>
+    <img id="main-image" src="static/image/Cloud Engineer Image.webp" width="300px" height="200px"/>
+
+    
+<div id="whole-section">
+        <div id="tools-section">
+        <h2><em>Common Tools</em></h2>
+        <div id="tool-img">
+            <img src="static/image/aws_image-removebg-preview.png" width="60px" height="50px">
+            <img src="static/image/docker-removebg-preview.png" width="60px" height="50px">
+            <img src="static/image/Kuburnetes-removebg-preview.png" width="60px" height="50px">
+            <img src="static/image/Terraform-removebg-preview.png" width="75px" height="50px">
+            <img src="static/image/git-removebg-preview.png" width="60px" height="50px">
+        </div>
+    </div>
+    <div id="main-section">
+        <h1>What is a Cloud Engineer</h1>
+        <p>A cloud engineer is an IT professional who designs, builds, and manages cloud infrastructure and services.
+             They are skilled in platforms like AWS, Azure, or Google Cloud, as well as networking, virtualization, automation,
+              and system administration. Cloud engineers collaborate with development, 
+            security, and operations teams to keep cloud environments secure, scalable, and high-performing.<br><br>
+
+Typical responsibilities include deploying and configuring cloud resources,
+ migrating systems to the cloud, and monitoring cloud applications. They may also support cost management, disaster recovery planning,
+  and cloud governance. Overall, cloud engineers help maintain reliable, resilient cloud systems and drive ongoing improvements that 
+  align with business and technical goals. 
+           
+                </p>  
+        
+    </div>
+
+    <div id="companies-section">
+        <h2><em>Companies Hiring </em></h2>
+            <div id="company-img">
+            <img src="static/image/amazon-removebg-preview.png" width="80px" height="60px">
+            <img src="static/image/Deloitte_img-removebg-preview.png"width="80px" height="50px">
+            <img src="static/image/Snowflake_img-removebg-preview.png" width="90px" height="60px">
+            <img src="static/image/google-removebg-preview.png" width="80px" height="30px">
+            <img src="static/image/Microsoft_image-removebg-preview.png" width="80px" height="50px">
+            </div>
+    </div>
+</div>
+
+<div id="lower-section">
+    <div id="skills-section">
+        <h2><em>Key Skills</em></h2>    
+        <ul>
+            <li>Cloud platforms (AWS, Azure, GCP)</li>
+            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+            <li>Networking and security in cloud environments</li>
+            <li>Linux/Windows system administration</li>
+            <li>Scripting and automation (Python, Bash, PowerShell)</li>
+            <li>Containerization (Docker) and orchestration (Kubernetes)</li>
+            <li>Monitoring and logging (CloudWatch, Prometheus, Grafana)</li>
+            <li>CI/CD pipelines and DevOps integration</li>
+            <li>Database management (SQL, NoSQL, managed cloud databases)</li>
+            <li>Troubleshooting and performance tuning</li>
+            <li>Knowledge of disaster recovery and high-availability architectures</li>
+            </ul>
+    </div>
+    <div id="certifications-section">
+        <h2><em>Relevant Certifications</em></h2>
+            <ul>
+                <h3>AWS:</h3>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>AWS Certified Solutions Architect – Associate</li>
+                <li>AWS Certified Developer – Associate</li>
+                <li>AWS Certified DevOps Engineer – Professional</li>
+                <h3>Microsoft Azure:</h3>
+                <li>Azure Fundamentals (AZ-900)</li>
+                <li>Azure Administrator Associate (AZ-104)</li>
+                <li>Azure Solutions Architect Expert (AZ-305)</li>
+                <li>Azure DevOps Engineer Expert (AZ-400)</li>
+                <h3>Google Cloud (GCP):</h3>
+                <li>Google Cloud Digital Leader</li>
+                <li>Associate Cloud Engineer</li>
+                <li>Professional Cloud Architect</li>
+                <li>Professional DevOps Engineer</li>
+            </ul>            
+</div>
+<div id="programming-section">
+    <h2><em>Programming Languages</em></h2>
+    <div id="programme-img">
+    <img src="static/image/Python_img-removebg-preview.png"width="75px" height="70px">
+    <img src="static/image/Golang_logo-removebg-preview.png"width="75px" height="60px">
+    <img src="static/image/Sql_img-removebg-preview.png"width="75px" height="60px">
+    <img src="static/image/Java_img-removebg-preview.png" width="75px" height="60px">
+    <img src="static/image/Javascript_img-removebg-preview.png"width="75px" height="60px">
+    </div>
+</div>
+</div>
+  <footer id="footer">
+    <div id="bottom-footer">
+        <h1 id="bottom-header">DevOpsHive</h1>
+        <p id="bottom-line">This is a website that provides the users information on
+        DevOps<br>and examples of the various career opportunites in the field.</p>
+        <hr id="line">
+    <div id="bottom-step">
+        <p id="bottom-text">&copy; Gian Gallego</p>
+        <div id="links">
+        <a href="{{url_for('main')}}">Home</a>
+        <a href="{{url_for('account')}}">My Account</a>
+        </div>
+        </div>
+    </div>
+  </footer>
+
+    <script src="static/java/java3.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
