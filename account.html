@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gian Gallego">
+     <link rel="stylesheet" href="css/account.css">
+     <link rel="shortcut icon" href="image/favicon.ico" type="x-icon"/>
+    <title>My Account Page</title>   
+</head>
+<body>
+    <div id="nav-bar">
+        <header id="main-header">
+            <img src="image/cooltext496253363751185.png" id="DevOpsHive"width="250px"/>
+         </header>
+        <div id="nav-buttons">
+           <a href="main.html">Home</a>
+            <a href="DevOps.html">DevOps Engineer</a>
+            <a href="Cloud.html">Cloud Engineer</a>
+            <a href="Site.html">Site Reliabilty Engineer</a>
+             <a href="account.html"class="active">My Account</a>
+        </div>
+    </div>
+
+<div id="big-section">
+    <div id="account-section">
+    <h1>Account Details</h1>
+        <div id="personal">
+    <p id="user"></p>
+    <p id="pw"></p>
+        </div>
+    </div>
+
+<section id="additional">
+        <h1>Additional information</h1>
+    <form>
+        <h3>Enter your Birthday:</h3>
+        <input type="date" id="Birthday"name="Birthday"><br>
+        <p id="newborn"></p>
+        <input type="submit" onclick="DOB()" value="submit"><br><br>
+
+        <h3>Enter your phone number:</h3>
+        <input type="tel" id="tele" name="telephone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="000-000-000"><br>
+        <p id="number"></p>
+        <input type="submit"onclick="cool()"value="Submit"> 
+        <input type="reset" id="empty"value="reset">
+    
+     
+        <h3 id="decision">Choose your Career Preference:</h3>
+        <input type="radio" id="job" name="fav_job" value="DevOps Engineer">
+        <label for="html">DevOps Engineer</label><br>
+        <input type="radio" id="job" name="fav_job" value="Cloud Engineer">
+        <label for="css">Cloud Engineer</label><br>
+        <input type="radio" id="job" name="fav_job" value="Site Reliability Engineer">
+        <label for="javascript">Site Reliability Engineer</label><br>
+        <input type="submit" onclick="fav()" value="Submit">
+        <p id="current"></p>
+
+        
+    </form> 
+</section>
+</div>
+
+<footer id="footer">
+    <div id="bottom-footer">
+        <h1 id="bottom-header">DevOpsHive</h1>
+        <p id="bottom-line">This is a website that provides the users information on
+        DevOps<br>and examples of the various career opportunites in the field.</p>
+        <hr id="line">
+    <div id="bottom-step">
+        <p id="bottom-text">&copy; Gian Gallego</p>
+        <div id="links">
+        <a href="main.html">Home</a>
+        <a href="account.html">My Account</a>
+        </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="java/java1.js"></script>
+</body>
+</html>
